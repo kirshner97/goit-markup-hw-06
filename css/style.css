@@ -302,12 +302,12 @@ input {
 }
 
 .mob-menu-adr {
+  margin-bottom: 48px;
 }
 .mob-menu-adr-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 .mob-menu-adr-item {
 }
@@ -318,6 +318,7 @@ input {
   letter-spacing: 0.02em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-style: normal;
 }
 
 .contact-link:active {
@@ -497,7 +498,8 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 
   .adv-item {
@@ -641,6 +643,19 @@ input {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .team {
+    padding: 96px 0;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+  }
+
+  .team-item {
+    min-width: 264px;
+  }
+}
+
 /* #endregion team */
 
 /* #region portfolio */
@@ -654,6 +669,8 @@ input {
 }
 
 .portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -834,14 +851,15 @@ input {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
-  margin-bottom: 16px;
 }
 
 .footer-inp::placeholder {
   color: #fff;
   opacity: 0.6;
 }
-
+.footer-label {
+  margin-bottom: 16px;
+}
 .footer-btn-subscribe {
   display: flex;
   justify-content: center;
@@ -1056,7 +1074,7 @@ input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 256px;
-  height: 58px;
+  height: 40px;
   padding-left: 38px;
   outline: transparent;
   background-color: transparent;
@@ -1166,6 +1184,13 @@ input {
   border: none;
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
