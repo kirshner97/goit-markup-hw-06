@@ -56,25 +56,31 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="btn-mob-menu">
+        <button type="button" class="btn-mob-menu" data-menu-open>
           <svg class="icon-mob-menu" width="24" height="24">
             <use href="./images/icons.svg#icon-mob-btn-menu"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mob-menu is-ope">
+      <div class="mob-menu is-open" data-menu>
         <div class="container mob-menu-container">
-          <button type="button" class="mob-menu-btn-cls">
+          <button type="button" class="mob-menu-btn-cls" data-menu-close>
             <svg width="8" height="8" class="mob-btn-cls-icon">
               <use href="./images/icons.svg#icon-close-btm"></use>
             </svg>
           </button>
           <nav class="mob-menu-navigation">
             <ul class="mob-menu-nav-list">
-              <li class="mob-menu-nav-item"><a href="">Studio</a></li>
-              <li class="mob-menu-nav-item"><a href="">Portfolio</a></li>
-              <li class="mob-menu-nav-item"><a href="">Contacts</a></li>
+              <li class="mob-menu-nav-item">
+                <a href="./index.html" class="mob-menu-nav-link">Studio</a>
+              </li>
+              <li class="mob-menu-nav-item">
+                <a href="#portfolio" class="mob-menu-nav-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-nav-item">
+                <a href="#footer" class="mob-menu-nav-link">Contacts</a>
+              </li>
             </ul>
           </nav>
           <address class="mob-menu-adr">
@@ -130,7 +136,9 @@
       <section class="main-idea">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-os">Order Service</button>
+          <button type="button" class="button-os" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Переваги -->
@@ -382,7 +390,7 @@
         </div>
       </section>
       <!-- Портфоліо -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -658,7 +666,7 @@
       </section>
     </main>
     <!-- Низ сайту -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container footer-ctn">
         <div class="footer-logo-ctn">
           <a href="./index.html" class="footer-link"
@@ -727,9 +735,9 @@
 
     <!-- Modal Window -->
 
-    <div class="modal-overflow is-ope hidden">
+    <div class="modal-overflow is-open" data-modal>
       <div class="modal-form">
-        <button type="button" class="modal-btn-cls">
+        <button type="button" class="modal-btn-cls" data-modal-close>
           <svg width="8" height="8" class="modal-btn-cls-icon">
             <use href="./images/icons.svg#icon-close-btm"></use>
           </svg>
@@ -813,5 +821,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
